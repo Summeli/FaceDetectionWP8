@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetectionExample", "Example\FaceDetectionExample.csproj", "{078F9EC2-1685-4972-A669-7E25831E2775}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A1381BBF-124E-4B05-B34C-D6889299DF48} = {A1381BBF-124E-4B05-B34C-D6889299DF48}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceDetectionWinPhone", "FaceDetectionWP\FaceDetectionWinPhone.csproj", "{A1381BBF-124E-4B05-B34C-D6889299DF48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Debug|ARM.ActiveCfg = Debug|ARM
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Debug|ARM.Build.0 = Debug|ARM
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Debug|ARM.Deploy.0 = Debug|ARM
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Debug|x86.ActiveCfg = Debug|x86
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Debug|x86.Build.0 = Debug|x86
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Debug|x86.Deploy.0 = Debug|x86
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Release|Any CPU.Build.0 = Release|Any CPU
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Release|ARM.ActiveCfg = Release|ARM
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Release|ARM.Build.0 = Release|ARM
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Release|ARM.Deploy.0 = Release|ARM
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Release|x86.ActiveCfg = Release|x86
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Release|x86.Build.0 = Release|x86
+		{078F9EC2-1685-4972-A669-7E25831E2775}.Release|x86.Deploy.0 = Release|x86
+		{A1381BBF-124E-4B05-B34C-D6889299DF48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1381BBF-124E-4B05-B34C-D6889299DF48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1381BBF-124E-4B05-B34C-D6889299DF48}.Debug|ARM.ActiveCfg = Debug|ARM
+		{A1381BBF-124E-4B05-B34C-D6889299DF48}.Debug|ARM.Build.0 = Debug|ARM
+		{A1381BBF-124E-4B05-B34C-D6889299DF48}.Debug|x86.ActiveCfg = Debug|x86
+		{A1381BBF-124E-4B05-B34C-D6889299DF48}.Debug|x86.Build.0 = Debug|x86
+		{A1381BBF-124E-4B05-B34C-D6889299DF48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1381BBF-124E-4B05-B34C-D6889299DF48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1381BBF-124E-4B05-B34C-D6889299DF48}.Release|ARM.ActiveCfg = Release|ARM
+		{A1381BBF-124E-4B05-B34C-D6889299DF48}.Release|ARM.Build.0 = Release|ARM
+		{A1381BBF-124E-4B05-B34C-D6889299DF48}.Release|x86.ActiveCfg = Release|x86
+		{A1381BBF-124E-4B05-B34C-D6889299DF48}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
