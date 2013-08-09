@@ -16,7 +16,11 @@ Download or fork the project from Gitub.
 Either add the FaceDetectionWinPhone Project to your project or build/add the FaceDetectionWinPhone dll
 Add a models/ folder to your project and add xml model files as found under FaceDetectionWinPhone/Sample/models or in the downloads section. I would recommend using haarcascadefrontalfacealt.xml (this is the only one tested).
 Make sure you have a reference to System.Xml.Linq
-Create a detector: FaceDetectionWinPhone.Detector detector = new FaceDetectionWinPhone.Detector(XDocument.Load(MODEL_FILE));
+Create a detector: 
+```c
+FaceDetectionWinPhone.Detector detector = new FaceDetectionWinPhone.Detector(XDocument.Load(MODEL_FILE));
+```
+
 You can use the detector by passing in either a string (path to image file), a WriteableBitmap, or an int array, width and height. Here's how to detect faces by passing in an int array:
 ```c
   List<FaceDetectionWinPhone.Rectangle> faces = mdetector.getFaces(pixelDataInt, mcameraWidth / mdownsampleFactor, mcameraHeight / m_downsampleFactor, 2f, 1.25f, 0.1f, 1, false);
