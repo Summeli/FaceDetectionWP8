@@ -28,8 +28,8 @@ This project contains a new example application. You can still get the old wp7 e
 
 Acknowledgements
 ===========================
-This library was originally made for Windows Phone 7 by Julia Schwarz, and it's only build for wp8 by me.The library is also largely based off of the Java-based library at [violajones]. Thank you very much for the developers of this library for making their code open source!
+This library was originally made for Windows Phone 7 by Julia Schwarz, and it's only build for wp8 by me.The library is also largely based off of the Java-based library at [jviolajones]. Thank you very much for the developers of this library for making their code open source!
 
 [facedetectwp7]: http://facedetectwp7.codeplex.com/ "facedetectwp7"
 [opencv]: http://opencv.org/ "OpenCV"
-[violajones]: http://code.google.com/p/jviolajones/ 
+[jviolajones]: http://code.google.com/p/jviolajones/ 
