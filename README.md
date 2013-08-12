@@ -44,3 +44,4 @@ Example application is using [WriteableBitmapEx]
 [jviolajones]: http://code.google.com/p/jviolajones/ 
 [WriteableBitmapEx]: http://writeablebitmapex.codeplex.com/ "WriteableBitmapEx"
 [NokiaDevWikiArticle]: http://developer.nokia.com/Community/Wiki/Detecting_Faces_on_Windows_Phone "Detecting faces on Windows Phone"
+
