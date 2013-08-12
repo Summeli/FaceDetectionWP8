@@ -18,20 +18,14 @@ namespace FaceDetectionWP8
 {
     public partial class MainPage : PhoneApplicationPage
     {
-
-
         const string MODEL_FILE = "haarcascade_frontalface_alt.xml";
-        FaceDetectionWinPhone.Detector _detector;
+        FaceDetectionWinPhone.Detector m_detector;
         
-        // private byte[] pixelBytes;
-        // private int[] pixelData;
         // Constructor
         public MainPage()
         {
             InitializeComponent();
-            _detector = new FaceDetectionWinPhone.Detector(System.Xml.Linq.XDocument.Load(MODEL_FILE));
-            // Sample code to localize the ApplicationBar
-            //BuildLocalizedApplicationBar();
+            m_detector = new FaceDetectionWinPhone.Detector(System.Xml.Linq.XDocument.Load(MODEL_FILE));
         }
 
         private void btnPhotoChoose_Clicked(object sender, RoutedEventArgs e)
@@ -46,17 +40,15 @@ namespace FaceDetectionWP8
         {
             if (e.TaskResult == TaskResult.OK)
             {
-                //Code to display the photo on the page in an image control named myImage.
                 BitmapImage bmp = new BitmapImage();
                 bmp.SetSource(e.ChosenPhoto);
                 WriteableBitmap btmMap = new WriteableBitmap(bmp);
             
                 List<FaceDetectionWinPhone.Rectangle> faces =
-                     _detector.getFaces(
+                     m_detector.getFaces(
                      btmMap, 10f, 1f, 0.05f, 1, false, false);
 
-                
-            
+                //update the bitmap before drawing it.
                 foreach (var r in faces)
                 {
                     int x = Convert.ToInt32(r.X);
