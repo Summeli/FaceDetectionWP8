@@ -30,6 +30,8 @@ Example Application
 ===========================
 This project contains a new example application. You can still get the old wp7 example app from [facedetectwp7] project pages, if you're interested about new examples.
 
+The example application is using [WriteableBitmapEx] to make the example easier to read. Note that you'll need to add the reference to [WriteableBitmapEx] to get the example working
+
 Acknowledgements
 ===========================
 This library was originally made for Windows Phone 7 by Julia Schwarz, and it's only build for wp8 by me.The library is also largely based off of the Java-based library at [jviolajones]. Thank you very much for the developers of this library for making their code open source!
@@ -37,3 +39,4 @@ This library was originally made for Windows Phone 7 by Julia Schwarz, and it's 
 [facedetectwp7]: http://facedetectwp7.codeplex.com/ "facedetectwp7"
 [opencv]: http://opencv.org/ "OpenCV"
 [jviolajones]: http://code.google.com/p/jviolajones/ 
+[WriteableBitmapEx]: http://writeablebitmapex.codeplex.com/ "WriteableBitmapEx"
