@@ -51,6 +51,7 @@
             <Button Name="btnPhotoChoose" Click ="btnPhotoChoose_Clicked" Margin="67,41,60,475">
                 Choose Photo
             </Button>
+       
             <Image Name="facesPic" HorizontalAlignment="Left" Height="388" Margin="19,170,0,0" VerticalAlignment="Top" Width="427"/>
         </Grid>
 
