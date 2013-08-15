@@ -49,7 +49,8 @@ namespace RealtimeExsample
         {
             var w = cameraViewer.CameraWidth;
             var h = cameraViewer.CameraHeight;
-
+            
+            //create temporary buffers for the frame
             if (_pixelDataGray == null || _pixelDataGray.Length != h * w)
             {
                 _pixelDataGray = new byte[w / _downsampleFactor * h / _downsampleFactor];
@@ -57,6 +58,7 @@ namespace RealtimeExsample
                     new byte[w / _downsampleFactor * h / _downsampleFactor];
                 _pixelDataGrayInt = new int[w / _downsampleFactor * h / _downsampleFactor];
                 _wb = new WriteableBitmap(w / _downsampleFactor, w / _downsampleFactor);
+                //The dbgImg is the image on the upper left corner in the demo, and it's now pointing into _wb
                 dbgImg.Source = _wb;
             }
 
@@ -77,9 +79,14 @@ namespace RealtimeExsample
             var elapsed = (DateTime.Now - _lastUpdate).TotalMilliseconds;
             cameraResolution.Text = w + " x " + h + " " + elapsed + " ms";
 
+            //copy the grayscale image into the frame shown in the upper left corner
             _pixelDataGrayInt.CopyTo(_wb.Pixels, 0);
             _wb.Invalidate();
 
+            /* Draw a red square around the face.
+               The image sent to the facedetection library was downscaled by factor of 4, so in 
+               here we're multiplying the x and the y coordinates with 4 to draw the square to 
+               correct place on the canvas. */
             Dispatcher.BeginInvoke(delegate()
             {
                 cnvsFaceRegions.Children.Clear();
