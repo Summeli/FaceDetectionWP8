@@ -34,6 +34,12 @@ The example application is using [WriteableBitmapEx] to make the example easier 
 
 You can find more details about the Example application from Nokia Developer Wiki article: [NokiaDevWikiArticle]
 Acknowledgements
+
+RealtimeExample Application
+===========================
+The RealtimeExample is sample application from [facedetectwp7] ported to the Windows Phone 8. You can see the RealtimeExample application in action at [RealtimeExample App at Youtube]
+
+
 ===========================
 This library was originally made for Windows Phone 7 by Julia Schwarz, and it's only build for wp8 by me.The library is also largely based off of the Java-based library at [jviolajones]. Thank you very much for the developers of this library for making their code open source!
 
@@ -44,4 +50,4 @@ Example application is using [WriteableBitmapEx]
 [jviolajones]: http://code.google.com/p/jviolajones/ 
 [WriteableBitmapEx]: http://writeablebitmapex.codeplex.com/ "WriteableBitmapEx"
 [NokiaDevWikiArticle]: http://developer.nokia.com/Community/Wiki/Detecting_Faces_on_Windows_Phone "Detecting faces on Windows Phone"
-
+[RealtimeExample App at Youtube]: http://www.youtube.com/watch?v=4iW7_7YfJsA
