@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{43f44f5d-23d8-4bfe-ad56-b2b786178c19}" Title="RealtimeExample" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="RealtimeExample author" Description="Sample description" Publisher="RealtimeExample" PublisherID="{29c18207-01a1-479b-a8cb-89c2e8a63e97}">
+  <Languages xmlns="">
+    <Language code="en" />
+  </Languages>
+  <App xmlns="" ProductID="{43f44f5d-23d8-4bfe-ad56-b2b786178c19}" Title="Real-Time Facedetection Example" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Antti Pohjola" Description="Realtime facedetection example for developer.nokia.com article: http://developer.nokia.com/Community/Wiki/Detecting_Faces_on_Windows_Phone" Publisher="Antti Pohjola" PublisherID="{29c18207-01a1-479b-a8cb-89c2e8a63e97}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
@@ -12,7 +15,6 @@
       <Capability Name="ID_CAP_ISV_CAMERA" />
       <Capability Name="ID_CAP_IDENTITY_DEVICE" />
       <Capability Name="ID_CAP_IDENTITY_USER" />
-      <Capability Name="ID_CAP_GAMERSERVICES" />
       <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
       <Capability Name="ID_CAP_MICROPHONE" />
     </Capabilities>
@@ -22,27 +24,27 @@
     <Tokens>
       <PrimaryToken TokenID="RealtimeExampleToken" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\small.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
-          <Title>RealtimeExample</Title>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\medium.png</BackgroundImageURI>
+          <Title>
+          </Title>
           <BackContent>
           </BackContent>
-          <BackBackgroundImageURI>
+          <BackBackgroundImageURI IsRelative="true" IsResource="false">
           </BackBackgroundImageURI>
           <BackTitle>
           </BackTitle>
-          <DeviceLockImageURI>
+          <DeviceLockImageURI IsRelative="true" IsResource="false">
           </DeviceLockImageURI>
-          <HasLarge>
-          </HasLarge>
+          <HasLarge>false</HasLarge>
         </TemplateFlip>
       </PrimaryToken>
     </Tokens>
     <ScreenResolutions>
       <ScreenResolution Name="ID_RESOLUTION_WVGA" />
-      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
       <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
     </ScreenResolutions>
     <Requirements>
       <Requirement Name="ID_REQ_FRONTCAMERA" />
