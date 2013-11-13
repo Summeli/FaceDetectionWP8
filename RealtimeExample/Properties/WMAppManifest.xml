@@ -4,7 +4,7 @@
   <Languages xmlns="">
     <Language code="en" />
   </Languages>
-  <App xmlns="" ProductID="{43f44f5d-23d8-4bfe-ad56-b2b786178c19}" Title="Real-Time Facedetection Example" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Antti Pohjola" Description="Realtime facedetection example for developer.nokia.com article: http://developer.nokia.com/Community/Wiki/Detecting_Faces_on_Windows_Phone" Publisher="Antti Pohjola" PublisherID="{29c18207-01a1-479b-a8cb-89c2e8a63e97}">
+  <App xmlns="" ProductID="{43f44f5d-23d8-4bfe-ad56-b2b786178c19}" Title="Real-Time Facedetection Example" RuntimeType="Silverlight" Version="1.0.1.0" Genre="apps.normal" Author="Antti Pohjola" Description="Realtime facedetection example for developer.nokia.com article: http://developer.nokia.com/Community/Wiki/Detecting_Faces_on_Windows_Phone" Publisher="Antti Pohjola" PublisherID="{29c18207-01a1-479b-a8cb-89c2e8a63e97}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
@@ -19,7 +19,7 @@
       <Capability Name="ID_CAP_MICROPHONE" />
     </Capabilities>
     <Tasks>
-      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" ActivationPolicy="Resume" />
     </Tasks>
     <Tokens>
       <PrimaryToken TokenID="RealtimeExampleToken" TaskName="_default">
@@ -35,9 +35,13 @@
           </BackBackgroundImageURI>
           <BackTitle>
           </BackTitle>
+          <LargeBackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\large.png</LargeBackgroundImageURI>
+          <LargeBackContent />
+          <LargeBackBackgroundImageURI IsRelative="true" IsResource="false">
+          </LargeBackBackgroundImageURI>
           <DeviceLockImageURI IsRelative="true" IsResource="false">
           </DeviceLockImageURI>
-          <HasLarge>false</HasLarge>
+          <HasLarge>True</HasLarge>
         </TemplateFlip>
       </PrimaryToken>
     </Tokens>

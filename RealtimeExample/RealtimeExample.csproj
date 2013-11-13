@@ -132,6 +132,7 @@
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Tiles\large.png" />
     <Content Include="Assets\Tiles\medium.png" />
     <Content Include="Assets\Tiles\small.png" />
     <Content Include="haarcascade_frontalface_alt.xml">
